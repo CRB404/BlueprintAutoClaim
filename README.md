@@ -1,5 +1,5 @@
 
-Blueprint MY.ID Interface
+Blueprint Auto Claim Interface
 =========
 
-The front end and firebase call back the MY.ID blueprint prototype.
+The front end and firebase call back the Auto Claim blueprint prototype.

@@ -71,70 +71,9 @@ var graphs = [
 //       console.log('Synchronization failed');
 //     });
 // }
-
-function setStrings() {
-  document.getElementById("search1").value = "Eric Chan"
-  document.getElementById("search2").value = "echan@ideo.com"
-  document.getElementById("search3").value = "7202516853"
-  document.getElementById("search4").value = "SSN hash"
+if () {
+  $('#myModal').modal('show');
 }
-
-function checkInput() {
-  // no errors
-  if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
-    console.log('success');
-  }
-  // one error
-  else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
-    console.log('error on 1');
-  }
-  else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
-    console.log('error on 2');
-  }
-  else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
-    console.log('error on 3');
-  }
-  else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
-    console.log('error on 4');
-  }
-  // two errors
-  else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
-    console.log('error on 1 and 2');
-  }
-  else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
-    console.log('error on 2 and 3');
-  }
-  else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value != "SSN hash") {
-    console.log('error on 3 and 4');
-  }
-  else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
-    console.log('error on 1 and 4');
-  }
-  else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
-    console.log('error on 1 and 3');
-  }
-  else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
-    console.log('error on 2 and 4');
-  }
-  // three errors
-  else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
-    console.log('error on 1, 2 and 3');
-  }
-  else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
-    console.log('error on 1, 2 and 4');
-  }
-  else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value != "SSN hash") {
-    console.log('error on 1, 3 and 4');
-  }
-  else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value != "SSN hash") {
-    console.log('error on 2, 3 and 4');
-  }
-  // total error
-  else {
-    console.log('total error');
-  }
-}
-
 
 // Call search results and display
 

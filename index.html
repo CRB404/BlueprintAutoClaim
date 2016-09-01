@@ -2,19 +2,22 @@
 <html lang="en" class="no-js">
 	<head>
 
+
 <!-- Basic Page Needs
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>MY.ID</title>
+		<title>Auto Claim</title>
 		<meta name="description" content="A prototype page for an autonomous box" />
 		<meta name="keywords" content="CoLab, IoT, blockchain, internet of things" />
 		<meta name="author" content="CoLab" />
+
 		<!-- <link rel="shortcut icon" href="../favicon.ico"> -->
 
 <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/animations.css" />
@@ -24,19 +27,18 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
 	  <script src="https://use.fontawesome.com/b1ea2d65a4.js"></script>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="js/modernizr.custom.js"></script>
 	</head>
-
-
-	<body onload="setStrings()">
+	<body>
 
 <!-- Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<div class="container" style="width: 100%; background-color: #F3F3F3;">
 			<div class="row">
 				<div class="twelve column" style="margin-top: 3%;">
-					<h4>My.ID</h4>
+					<h4>Auto Claim</h4>
 				</div>
 			</div>
 		</div>
@@ -44,85 +46,38 @@
 
 <!-- Begin of Moving Pages
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<div id="pt-main" class="pt-perspective">
 
-			<!-- Begin Page 1 -->
-			<div class="pt-page pt-page-1">
-				<div class="container">
-					<div class="row" style="margin-top: 5%;">
+				<div class="container" style="margin-top:15%">
+				  <h2 style="font-family:Helvetica Neue; color:#fff;">White Mustang, licences plate: C0LA8 is safe and opperational</h2>
+					
+				  <!-- Trigger the modal with a button -->
+				  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Crash</button>
 
-					</div>
+				  <!-- Modal -->
+				  <div class="modal fade" id="myModal" role="dialog">
+				    <div class="modal-dialog">
+
+				      <!-- Modal content-->
+				      <div class="modal-content">
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				          <h4 class="modal-title" style="font-family:Helvetica Neue;">White Mustang | Plate Number: C0LA8<hr>Has had a collision</h4>
+				        </div>
+				        <div class="modal-body">
+				          <p>Filling claim and posting bounty for images to bystandards in area.</p>
+				        </div>
+				        <div class="modal-footer">
+				          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        </div>
+				      </div>
+
+				    </div>
+				  </div>
+
 				</div>
-
-
-				<!-- Search bar -->
-				<div class="container">
-					<div class="row">
-						<div class="box">
-							<div class="container-4">
-								<input type="text" id="search1" placeholder="input 1" value=""/>
-
-							</div>
-							<div class="container-4">
-								<input type="text" id="search2" placeholder="input 2" value=""/>
-
-							</div>
-							<div class="container-4">
-								<input type="text" id="search3" placeholder="input 3" value=""/>
-
-							</div>
-							<div class="container-4">
-								<input type="text" id="search4" placeholder="input 4" value=""/>
-
-							</div>
-							<button onclick="checkInput()">Check Input</button>
-						</div>
-					</div>
-				</div>
-
-				<!-- <div class="contianer">
-					<div class="row">
-						<button onclick="checkInput()">Check Input</button>
-					</div>
-				</div> -->
-			</div>
-			<!-- End of Page 1 -->
-
-			<!-- Begin Page 2 -->
-			<div class="pt-page pt-page-2">
-				<div class="container">
-					<div class="row">
-						<div class="one-half column" style="margin-top: 20%">
-							<h4 style="font-family: 'PT Sans Caption', sans-serif; font-weight:300; font-size:16px;">Dispatch is a thing yay!</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Page 2 -->
-
-		</div>
-		<!-- End of Moving Pages -->
-
-		<!-- Update Broswer -->
-		<div class="pt-message">
-			<p>Your browser does not support CSS animations.</p>
-		</div>
-
 
 <!-- Triggers and Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<div class="pt-triggers">
-			<div class="container" style="">
-				<div id="dl-menu">
-					<ul class="dl-menu">
-						<div class="nav">
-								<!-- <li data-animation="1"><a href="#"><button class="icon"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
-								<li data-animation="2"><a href="#"><button class="icon"><i class="fa fa-question" aria-hidden="true"></i></a></li> -->
-						</div>
-					</ul>
-				</div>
-			</div>
-		</div>
 		<!-- /triggers -->
 
 <!-- Scripts
