@@ -25,6 +25,7 @@ particle.getEventStream({ deviceId: '28003e000947343337373738', name: 'success',
   stream.on('success', function(data) {
     var set = 1;
     console.log("On Event: " + set + data);
+    openThatDamnedModal();
 
   });
 });
@@ -39,7 +40,9 @@ particle.getEventStream({ deviceId: '28003e000947343337373738', name: 'fail', au
 
 function openThatDamnedModal() {
   $('#myModal').modal('show');
-  console.log();
+  setTimeout(function(){
+    $('#myModal').modal('hide')
+  }, 5000);
 }
 
 
