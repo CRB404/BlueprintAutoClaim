@@ -1,5 +1,13 @@
 var variable = firebase.database().ref('inputs');
 var lossVal = firebase.database().ref();
+var set = 0;
+
+
+
+var particle = new Particle();
+particle.login({username: 'weftech@gmail.com', password: 'W3Ftech@spark'});
+
+
 
 // Graph Array
 
@@ -10,6 +18,31 @@ var graphs = [
   'z','y','x','w','v','u','t','s','r','q','p','o','n','m','l','k',
   'j','i','h','g','f','e','d','c','b','a',' '
 ]
+
+//Get all events
+
+particle.getEventStream({ deviceId: '28003e000947343337373738', name: 'success', auth: '7dfb755486e5e116bf9a73c6764959c1180c64cf' }).then(function(stream) {
+  stream.on('success', function(data) {
+    var set = 1;
+    console.log("On Event: " + set + data);
+
+  });
+});
+
+particle.getEventStream({ deviceId: '28003e000947343337373738', name: 'fail', auth: '7dfb755486e5e116bf9a73c6764959c1180c64cf' }).then(function(stream) {
+  stream.on('fail', function(data) {
+    var set = 0;
+    console.log("Off Event: " + set + data);
+
+  });
+});
+
+function open() {
+  $('#myModal').modal('show');
+}
+
+
+
 
 // Bounty and Graph Function
 // _____________________________________________________________________________
@@ -71,9 +104,9 @@ var graphs = [
 //       console.log('Synchronization failed');
 //     });
 // }
-if () {
-  $('#myModal').modal('show');
-}
+// if () {
+//
+// }
 
 // Call search results and display
 
