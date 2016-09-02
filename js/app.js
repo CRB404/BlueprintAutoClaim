@@ -42,7 +42,7 @@ function openThatDamnedModal() {
   $('#myModal').modal('show');
   setTimeout(function(){
     $('#myModal').modal('hide')
-  }, 5000);
+  }, 6000);
 }
 
 
