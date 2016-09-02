@@ -38,7 +38,6 @@ particle.getEventStream({ deviceId: '28003e000947343337373738', name: 'fail', au
 });
 
 function openThatDamnedModal() {
-  debugger;
   $('#myModal').modal('show');
   console.log();
 }
