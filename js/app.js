@@ -21,19 +21,11 @@ var graphs = [
 
 //Get all events
 
-particle.getEventStream({ deviceId: '28003e000947343337373738', name: 'success', auth: '7dfb755486e5e116bf9a73c6764959c1180c64cf' }).then(function(stream) {
+particle.getEventStream({ deviceId: '470020001451343334363036', name: 'car_crash', auth: '9e61d1cf7b89fb5f3e54c6f76a2bdac46cf569eb' }).then(function(stream) {
   stream.on('success', function(data) {
-    var set = 1;
+    debugger
     console.log("On Event: " + set + data);
     openThatDamnedModal();
-
-  });
-});
-
-particle.getEventStream({ deviceId: '28003e000947343337373738', name: 'fail', auth: '7dfb755486e5e116bf9a73c6764959c1180c64cf' }).then(function(stream) {
-  stream.on('fail', function(data) {
-    var set = 0;
-    console.log("Off Event: " + set + data);
 
   });
 });
