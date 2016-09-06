@@ -5,7 +5,7 @@ var set = 0;
 
 
 var particle = new Particle();
-particle.login({username: 'weftech@gmail.com', password: 'W3Ftech@spark'});
+particle.login({username: 'ecphylo@gmail.com', password: 'ideo123'});
 
 
 
