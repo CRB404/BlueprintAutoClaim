@@ -21,7 +21,7 @@ var graphs = [
 
 //Get all events
 
-particle.getEventStream({ deviceId: '470020001451343334363036', name: 'car_crash', auth: '9e61d1cf7b89fb5f3e54c6f76a2bdac46cf569eb' }).then(function(stream) {
+particle.getEventStream({ auth: '9e61d1cf7b89fb5f3e54c6f76a2bdac46cf569eb' }).then(function(stream) {
   stream.on('success', function(data) {
     debugger
     console.log("On Event: " + set + data);
@@ -30,6 +30,7 @@ particle.getEventStream({ deviceId: '470020001451343334363036', name: 'car_crash
   });
 });
 
+// deviceId: '470020001451343334363036', name: 'car_crash',
 function openThatDamnedModal() {
   $('#myModal').modal('show');
   setTimeout(function(){
