@@ -22,7 +22,7 @@ var graphs = [
 //Get all events
 
 particle.getEventStream({ auth: '9e61d1cf7b89fb5f3e54c6f76a2bdac46cf569eb' }).then(function(stream) {
-  stream.on('car_crash', function(data) {
+  stream.on('event', function() {
     debugger
     console.log("On Event: " + set + data);
     openThatDamnedModal();
