@@ -21,8 +21,8 @@ var graphs = [
 
 //Get all events
 
-particle.getEventStream({ auth: '9e61d1cf7b89fb5f3e54c6f76a2bdac46cf569eb' }).then(function(stream) {
-  stream.on('car_crash', function(data) {
+particle.getEventStream({ deviceId: '470020001451343334363036', auth: '9e61d1cf7b89fb5f3e54c6f76a2bdac46cf569eb' }).then(function(stream) {
+  stream.on('success', function(data) {
     debugger
     console.log("On Event: " + set + data);
     openThatDamnedModal();
@@ -30,7 +30,7 @@ particle.getEventStream({ auth: '9e61d1cf7b89fb5f3e54c6f76a2bdac46cf569eb' }).th
   });
 });
 
-//  name: 'car_crash',
+// deviceId: '470020001451343334363036', name: 'car_crash',
 function openThatDamnedModal() {
   $('#myModal').modal('show');
   setTimeout(function(){
