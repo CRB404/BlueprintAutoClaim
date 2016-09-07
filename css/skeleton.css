@@ -122,8 +122,8 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
+  /*font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  /*line-height: 1.6;*/
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000; }
@@ -299,10 +299,12 @@ ul ul,
 ul ol,
 ol ol,
 ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%; }
+  /*margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; */
+}
 li {
-  margin-bottom: 1rem; }
+  /*margin-bottom: 1rem; */
+}
 
 
 /* Code
@@ -383,27 +385,90 @@ hr {
 /* Background */
 body {
   height: 100%;
-  background: #1E1833;
-  /*background: #F05B53;*/
+  background: #26292E;
 }
 
 /* Header Font */
 h4 {
-  font-family: 'Cera Light', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size:20px;
   text-align: center;
   color: #231f20;
   letter-spacing: 2px;
 }
 
-/* Main Alert Font */
-h1 {
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 200px;
-  text-align: center;
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size:20px;
+  font-weight: 400;
+  text-align: left;
+  color: #656D78;
+  margin-bottom: 0%;
 }
 
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size:25px;
+  font-weight: 400;
+  text-align: left;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* Main Alert Font */
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size:40px;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+  margin-top: 5%;
+  margin-left: 1px;
+}
+
+br{
+  height: .5%;
+}
+
+.row#mainHead {
+  background: url(../images/Blueprint_Claimbot_Background.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 25%;
+}
+
+.row#context {
+  margin-top: 2%;
+}
+
+.container#sec1 {
+  width: 33%;
+}
+.container#sec2 {
+  width: 33%;
+}
+.container#sec3 {
+  width: 33%;
+}
+
+img#imageMap {
+  width: 100%;
+}
+
+
+.modal-content {
+  background: #26292E;
+}
+.modal-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size:20px;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 1px;
+}
 /* Search Bar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .box{
@@ -592,11 +657,13 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+
 }
 
 li {
-  display: inline;
-  margin-right: 3px;
+  float: left;
+
 }
 
 .nav button.icon{
