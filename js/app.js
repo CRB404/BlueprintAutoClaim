@@ -33,7 +33,31 @@ particle.getEventStream({ deviceId: '470020001451343334363036', auth: '9e61d1cf7
 function openThatDamnedModal() {
   $('#myModal').modal('show');
   setTimeout(function(){
-    $('#myModal').modal('hide')
+    $('#crash1').show();
+    $('#myModal').animate({
+      scrollTop: 200
+    }, 500);
+
+  }, 1500);
+  setTimeout(function(){
+    $('#crash2').show();
+    $('#myModal').animate({
+      scrollTop: 600
+    }, 500);
+
+  }, 3000);
+  setTimeout(function(){
+    $('#crash3').show();
+    $('#myModal').animate({
+      scrollTop: 1100
+    }, 500);
+
+  }, 4500);
+  setTimeout(function(){
+    $('#myModal').modal('hide');
+    $('#crash1').hide();
+    $('#crash2').hide();
+    $('#crash3').hide();
   }, 6000);
 }
 
