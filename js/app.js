@@ -29,36 +29,35 @@ particle.getEventStream({ deviceId: '470020001451343334363036', auth: '9e61d1cf7
   });
 });
 
-// deviceId: '470020001451343334363036', name: 'car_crash',
 function openThatDamnedModal() {
   $('#myModal').modal('show');
   setTimeout(function(){
     $('#crash1').show();
     $('#myModal').animate({
-      scrollTop: 200
-    }, 500);
-
-  }, 1500);
-  setTimeout(function(){
-    $('#crash2').show();
-    $('#myModal').animate({
-      scrollTop: 600
-    }, 500);
+      scrollTop: 300
+    }, 1000);
 
   }, 3000);
   setTimeout(function(){
+    $('#crash2').show();
+    $('#myModal').animate({
+      scrollTop: 650
+    }, 1000);
+
+  }, 6000);
+  setTimeout(function(){
     $('#crash3').show();
     $('#myModal').animate({
-      scrollTop: 1100
-    }, 500);
+      scrollTop: 1300
+    }, 1000);
 
-  }, 4500);
+  }, 9000);
   setTimeout(function(){
     $('#myModal').modal('hide');
     $('#crash1').hide();
     $('#crash2').hide();
     $('#crash3').hide();
-  }, 6000);
+  }, 12000);
 }
 
 
