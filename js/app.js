@@ -37,27 +37,27 @@ function openThatDamnedModal() {
       scrollTop: 300
     }, 1000);
 
-  }, 3000);
+  }, 4000);
   setTimeout(function(){
     $('#crash2').show();
     $('#myModal').animate({
       scrollTop: 650
     }, 1000);
 
-  }, 6000);
+  }, 7000);
   setTimeout(function(){
     $('#crash3').show();
     $('#myModal').animate({
       scrollTop: 1300
     }, 1000);
 
-  }, 9000);
+  }, 10000);
   setTimeout(function(){
     $('#myModal').modal('hide');
     $('#crash1').hide();
     $('#crash2').hide();
     $('#crash3').hide();
-  }, 12000);
+  }, 14000);
 }
 
 
